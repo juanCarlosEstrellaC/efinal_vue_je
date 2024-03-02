@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { ingresarestudianteFachada } from "../helpers/EstudianteCliente";
+import { consultarFachada } from "../helpers/EstudianteCliente";
 
 export default {
   data() {
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     async obtenerListaEstudiantes() {
-      this.listaEstudiantes = await ingresarestudianteFachada();
+      this.listaEstudiantes = await consultarFachada();
        
     }
   }
