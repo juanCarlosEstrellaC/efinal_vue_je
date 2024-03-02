@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { consultarFachada } from "../helpers/EstudianteCliente";
+import { consultarFachada } from "../helpers/clienteEstudiante";
 
 export default {
   data() {

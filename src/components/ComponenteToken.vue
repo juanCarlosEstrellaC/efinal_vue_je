@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { guardarFachada } from "@/helpers/EstudianteCliente";
+import { guardarFachada, consultarFachada } from "@/helpers/clienteEstudiante";
 
 export default {
   data() {
@@ -29,9 +29,10 @@ export default {
       const estu = {
         nombre: this.nombre,
         apellido: this.apellido,
-        cedula: this.cedula
-      }
+        cedula: this.cedula,
+      };
       await guardarFachada(estu);
+      this.$emit("estudianteGuardado");
     },
   },
 };

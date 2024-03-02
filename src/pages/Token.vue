@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { tokenFachada } from "../helpers/clienteEstudiante";
+import { tokenFachada } from "../helpers/clienteToken";
 
 export default {
   data() {
