@@ -1,8 +1,7 @@
 <template>
-  <h1>Universidad Central del Ecuador</h1>
+  <h1>Evaluacion final</h1>
    <NavBar />
    <router-view />
-   <h2>Todos los derechos reservados</h2>
  </template>
  
  <script>
